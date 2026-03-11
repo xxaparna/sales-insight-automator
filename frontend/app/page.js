@@ -24,7 +24,7 @@ export default function Home() {
       setLoading(true);
       setMessage("");
 
-      const response = await fetch("http://127.0.0.1:8000/api/v1/analyze", {
+      const response = await fetch("https://sales-insight-automator.onrender.com/api/v1/analyze", {
         method: "POST",
         body: formData,
       });
